@@ -1,0 +1,33 @@
+<!Doctype html>
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>The Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <p id="nbre">3</p>
+        <div class="score-timer">
+            <span id="sc">score: 0</span>
+            <span id="timer">timer: 60</span>
+        </div>
+        <div class="buttons">
+            <button type="button" onclick="check(1)">1</button>
+            <button type="button" onclick="check(2)">2</button>
+            <button type="button" onclick="check(3)">3</button>
+            <button type="button" onclick="check(4)">4</button>
+            <button type="button" onclick="check(5)">5</button>
+            <button type="button" onclick="check(6)">6</button>
+            <button type="button" onclick="check(7)">7</button>
+            <button type="button" onclick="check(8)">8</button>
+            <button type="button" onclick="check(9)">9</button>
+            <button type="button" onclick="check(10)">10</button>
+        </div>
+    </div>
+    <div id="game-over" class="game-over hidden">
+        <h2>Temps écoulé !</h2>
+        <p>Score final : <span id="final-score">0</span></p>
+        <button onclick="restart()">Recommencer</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
